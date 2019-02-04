@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Gulp Boilerplate</title>
-	<link rel="stylesheet" type="text/css" href="dist/css/main.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="dist/favicon.png">
+    <meta charset="UTF-8">
+    <title>Gulp Boilerplate</title>
+    <link rel="stylesheet" type="text/css" href="dist/css/main.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="dist/favicon.png">
 </head>
+
 <body>
-  <h1>Gulp</h1>
-  <script src="dist/js/bundle.js"></script>
+    <div class="container">
+        <div class="row blog">
+            <div class="col-md-12">
+                <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#blogCarousel" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <p>A Wing and a Prayer</p>
+                                    <a href="#">
+                                        <img src="dist/img/book1.jpg" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="dist/img/book1.jpg" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="dist/img/book1.jpg" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="dist/img/book1.jpg" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                
+                                <!--.item-->
+                            </div>
+                            <!--.carousel-inner-->
+                        </div>
+                        <!--.Carousel-->
+                    </div>
+                </div>
+            </div>
+            <script src="dist/js/bundle.js"></script>
 </body>
+
 </html>
