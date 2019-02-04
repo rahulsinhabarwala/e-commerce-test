@@ -1,6 +1,4 @@
-# :zap: Gulp Boilerplate
-
-## Instructions for the boilerplate
+A light package for compiling Sass and running a dev server
 
 * Clone the repository.
 
@@ -35,6 +33,7 @@ npm start
 
 ## Dependencies used in this boilerplate
 
+
 * [gulp](https://www.npmjs.com/package/gulp)
 * [gulp-sass](https://www.npmjs.com/package/gulp-sass)
 * [gulp-rename](https://www.npmjs.com/package/gulp-rename)
@@ -47,3 +46,7 @@ npm start
 * [babelify](https://www.npmjs.com/package/babelify)
 * [gulp-util](https://www.npmjs.com/package/gulp-util)
 * [vinyl-source-stream](https://www.npmjs.com/package/vinyl-source-stream)
+=======
+```sh
+$ npm start
+```
