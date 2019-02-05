@@ -1,0 +1,112 @@
+.container-fluid {
+    padding-right:0 !important;
+    padding-left:0 !important;
+    margin-right:auto;
+    margin-left:auto;
+ }
+
+ .brand-stip{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .brand-strip-logo{
+        width:100px;
+            height: 50px;
+        img{
+            width:100%;
+            height: 100%;
+        }
+    }
+}
+
+.mosiac{
+    margin-top: 10px;
+    display: grid;
+    height: 480px;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(9,1fr);
+    grid-gap: 20px;
+    overflow:hidden;
+    .mosiac-item{
+        @media(min-width:720px){
+
+        }
+        display: flex;
+        justify-content: center;
+        // background-color: orange;
+        
+        align-items: center;
+        overflow: hidden;
+        border-radius:5px;
+        &.tall{
+            grid-row:span 2;
+            grid-column:span 2;
+            // .mosiac-item-info{
+            //     width:100%;
+            //     height:20%;
+                
+            // }
+            // .mosiac-item-img{
+            //     width:100%;
+            //     height:80%;
+            // }
+        }
+        &.large{
+            background-color: lightseagreen;
+            grid-row:span 1;
+            grid-column:span 4;
+        }
+        &.small{
+            background-color: lightgreen;
+            grid-row:span 1;
+            grid-column:span 3;
+        } 
+
+        .mosiac-item-info{
+            width:60%;
+            height: 100%;
+            
+            p{
+                color:white;
+                font-weight: 600;
+                margin-top:40px;
+                margin-left:18px;
+             }
+        }
+
+        .mosiac-item-img{
+            width:40%;
+            height:100%;
+            img{
+                max-height:100%;
+                height:100%;
+                width:100%;
+                object-fit: cover;
+            }
+        }
+       
+    }
+   
+    .tall{
+        grid-row:span 1;
+        grid-column:span 4;
+        display: flex;
+        flex-direction: column;
+        background-color: lightsalmon;
+        .mosiac-item-info{
+            width:100%;
+            height: 20%;
+        }
+        .mosiac-item-img{
+            width:100%;
+            height: 80%;
+            img{
+                max-height:100%;
+                height:100%;
+                width:100%;
+                object-fit:cover ;
+            }
+        }
+    }
+    
+}
