@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="dist/css/carousel.min.css">
   <link rel="stylesheet" type="text/css" href="dist/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="dist/css/fotter.min.css">
+  <link rel="stylesheet" type="text/css" href="dist/css/header.min.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- font-awsome -->
@@ -22,6 +23,58 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Page 1-1</a></li>
+                <li><a href="#">Page 1-2</a></li>
+                <li><a href="#">Page 1-3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Page 2</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+  <header id='header'>
+    <div class="container">
+      <div class="row top-holder">
+        <!--Logo-->
+        <div class="col-xs-12 col-sm-5 col-md-3 logo-holder">
+          <img src="dist/img/logo_footer.png" alt='books-logo'>
+        </div>
+        <!--Search-input-->
+        <div class="col-xs-12 col-sm-7 col-md-7 search-group">
+          <form class="navbar-form">
+            <div class="form-group">
+              <input placeholder="Search our catalog" type="text" class="form-control search-bar">
+              <button class="btn btn-primary search-button"><span>Search</span></button>
+            </div>
+          </form>
+        </div>
+        <!--cart info-->
+        <div class="hidden-xs col-md-2 cart-info">
+          <div class="header-cart">
+            <div class="cart-para">
+              <p class="info-para">My shoping cart<span class="zero-sign">0</span></p>
+              <p class="price-para">$0.00<i class="fa fa-angle-down fa-down-icon"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <!-- crousel -->
   <div class="container-fluid">
     <div class="row">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -34,72 +87,108 @@
         <div class="carousel-inner">
           <div class="item active">
             <img src="dist/img/sample3.jpg" alt="Chania">
-            <!-- <div class="carousel-caption">
-              <h1>I Love This Idea!</h1>
-              <p>cover up front of book and leave summery</p>
-              <button class='btn-primary'>Learn More</button>
-            </div> -->
           </div>
-
           <div class="item">
             <img src="dist/img/sample3.jpg" alt="Chicago">
-            <!-- <div class="carousel-caption">
-              <h1>I Love This Idea!</h1>
-              <p>cover up front of book and leave summery</p>
-              <button>Learn More</button>
-            </div> -->
           </div>
         </div>
       </div><!-- row -->
     </div> <!-- Container-fluid -->
-
-
-    <!-- sdfsd -->
     <div class="container">
       <div class="mosiac">
+        <!-- grid-images -->
         <div class="mosiac-item tall">
           <div class='mosiac-item-info'>
-            <p>Lorem ipsum</p>
+            <p>Lorem ipsum<span><br><i class="fa fa-angle-right"></i></span></p>
           </div>
           <div class='mosiac-item-img'>
-            <img src='dist/img/book4.jpg'>
+            <img src='dist/img/home_default-blog2.jpg'>
           </div>
         </div>
         <div class="mosiac-item large">
           <div class='mosiac-item-info'>
-            <p>Lorem ipsum</p>
+            <p>Lorem ipsum<br><i class="fa fa-angle-right"></i></span></p>
           </div>
           <div class='mosiac-item-img'>
-            <img src='dist/img/book4.jpg'>
+            <img src='dist/img/2(1).jpg'>
           </div>
         </div>
         <div class="mosiac-item small">
           <div class='mosiac-item-info'>
-            <p>Lorem ipsum</p>
+            <p>Lorem ipsum<br><i class="fa fa-angle-right"></i></span></p>
           </div>
           <div class='mosiac-item-img'>
-            <img src='dist/img/book4.jpg'>
+            <img src='dist/img/sample-1.jpg'>
           </div>
         </div>
         <div class="mosiac-item small">
           <div class='mosiac-item-info'>
-            <p>Lorem ipsum</p>
+            <p>Lorem ipsum<br><i class="fa fa-angle-right"></i></span></p>
           </div>
           <div class='mosiac-item-img'>
-            <img src='dist/img/book4.jpg'>
+            <img src='dist/img/home_default-blog2.jpg'>
           </div>
         </div>
         <div class="mosiac-item large">
           <div class='mosiac-item-info'>
-            <p>Lorem ipsum</p>
+            <p>Lorem ipsum<br><i class="fa fa-angle-right"></i></span></p>
           </div>
           <div class='mosiac-item-img'>
-            <img src='dist/img/book4.jpg'>
+            <img src='dist/img/sample-1.jpg'>
           </div>
         </div>
       </div>
-
     </div>
+
+    <!-- dilvery strip   -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 ">
+          <!-- <wraper -->
+          <div class="delivery-strip-item">
+            <img src='dist/img/dilevery2.png'>
+            <p class="strip-item-info">Free Shiping Item</p>
+            <p class="strip-info-rating">order over $500</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="delivery-strip-item">
+            <img src='dist/img/dilevery21.png'>
+            <p class="strip-item-info">Money Back Guarantee</p>
+            <p class="strip-info-rating">order over $500</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="delivery-strip-item">
+            <img src='dist/img/dilevery3.png'>
+            <p class="strip-item-info">Cash On Delivery</p>
+            <p class="strip-info-rating">order over $500</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="delivery-strip-item">
+            <img src='dist/img/dilevery4.png'>
+            <p class="strip-item-info">Help & Support</p>
+            <p class="strip-info-rating">order over $500</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- dilvery strip   -->
+
+    <!-- sales images -->
+    <div class="container">
+      <div class="row sales">
+        <div class="col-sm-6">
+          <img src="dist/img/sale1.jpg" alt="sale">
+        </div>
+        <div class="col-sm-6">
+          <img src="dist/img/sale2.jpg" alt="sale">
+        </div>
+      </div>
+    </div>
+    <!-- sales images -->
+
     <!-- stripe crousel -->
     <div class="container">
       <div class="row">
@@ -148,9 +237,9 @@
         </div>
       </div>
       <!-- <hr> -->
-      <!-- stripe crousel -->
-      <!-- asdaad -->
     </div>
+    <!-- stripe crousel -->
+
     <!-- fotter -->
     <footer>
       <div class="container footer-1 ">
@@ -201,6 +290,7 @@
               <input type="text" class="form-control" name="newsletter" placeholder="your email address">
               <button type="button" class="btn btn-success subscribe-btn">Subscribe</button>
             </div>
+            <!-- <social media icons -->
             <div class="social-media row">
               <h2 class="col-12">Stay Connected</h2>
               <div class="col-12">
@@ -229,6 +319,7 @@
         </h3>
       </div>
     </footer>
+    <!-- fotter -->
     <script src="dist/js/bundle.js"></script>
 </body>
 

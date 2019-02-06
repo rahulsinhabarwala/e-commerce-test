@@ -1,86 +1,95 @@
 //https://bootsnipp.com/snippets/zDQkr
 .carousel-indicators .active {
 
-    background-color: #08eb40 !important;
+  background-color: #08eb40 !important;
+  border: none;
+}
+
+.carousel-indicators {
+  li {
     border: none;
-  }
-  
-  .carousel-indicators {
-    li {
-      border: none;
-      border-radius: 50%;
-      background-color: #FFF;
-    }
-  }
-  .carousel-caption {
-    right: 5%;
-    text-align: right;
-    max-width: 300px;
-    left: auto;
-    padding:5px;
-    button{
-      border-radius: 5px !important;
-      text-decoration: none;
-      background: #03A9F4;
-      border: solid 1px #0f9ada;
-      border-radius: 4px;
-      width: 160px;
-      height: 36px;
-    
+    border-radius: 50%;
+    background-color: #FFF;
   }
 }
 
-  hr { 
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 10px !important;
+.carousel-caption {
+  right: 5%;
+  text-align: right;
+  max-width: 300px;
+  left: auto;
+  padding: 5px;
+
+  button {
+    border-radius: 5px !important;
+    text-decoration: none;
+    background: #03A9F4;
+    border: solid 1px #0f9ada;
+    border-radius: 4px;
+    width: 160px;
+    height: 36px;
+
   }
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 10px !important;
+}
 
 //   scasf
 .MultiCarousel {
-     float: left;
-      overflow: hidden; 
-      padding: 15px; 
-      width: 100%;
-       position:relative; 
-       
-    }
-    .MultiCarousel .MultiCarousel-inner {
-         transition: 1s ease all;
-          float: left; 
-        }
-        .MultiCarousel .MultiCarousel-inner .item {
-             float: left;
-            }
-        .MultiCarousel .MultiCarousel-inner .item > div { 
-            text-align: center;
-               background:#FFF;
-                color:#FFF;
-            }
-    .MultiCarousel .leftLst, .MultiCarousel .rightLst { 
-        position:absolute;
-        border-radius:9px;
-        top:calc(50% - 20px);
-        background-color: #D3D3D3; /* Green */
-        border: none;
-        border-radius: 2px;
-        color: #fff;
-        padding: 9px 13px;
-         }
-    .MultiCarousel .leftLst {
-         left:0;
-         }
-    .MultiCarousel .rightLst {
-         right:0; 
-        }
-    
-        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
-            pointer-events: none;
-             background:#ccc; 
-            }
+  float: left;
+  overflow: hidden;
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  margin: 30px 0px;
+}
 
-            
+.MultiCarousel .MultiCarousel-inner {
+  transition: 1s ease all;
+  float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+  float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item>div {
+  text-align: center;
+  background: #FFF;
+  color: #FFF;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+  position: absolute;
+  border-radius: 9px;
+  top: calc(50% - 20px);
+  background-color: #D3D3D3;
+  /* Green */
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  padding: 9px 13px;
+}
+
+.MultiCarousel .leftLst {
+  left: 0;
+}
+
+.MultiCarousel .rightLst {
+  right: 0;
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+  pointer-events: none;
+  background: #ccc;
+}

@@ -1,121 +1,155 @@
-body{
+body {
     @font-face {
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 400;
         src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-      }
+    }
 }
-.container-fluid {
-    padding-right:0 !important;
-    padding-left:0 !important;
-    margin-right:auto;
-    margin-left:auto;
- }
- ::placeholder {
-     padding: 15px;
-     opacity: 9%;
- }
 
- .brand-stip{
+
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+::placeholder {
+    padding: 15px;
+    opacity: 9%;
+}
+// arrow
+.fa-angle-right {
+    font-size: 24px !important;
+}
+
+.brand-stip {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    .brand-strip-logo{
-        width:100px;
-            height: 50px;
-        img{
-            width:100%;
+    .brand-strip-logo {
+        width: 100px;
+        height: 50px;
+
+        img {
+            width: 100%;
             height: 100%;
         }
     }
 }
-
-.mosiac{
-    margin-top: 10px;
+.mosiac {
     display: grid;
-    height: 480px;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-columns: repeat(9,1fr);
+    margin-top: 10px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-gap: 20px;
-    overflow:hidden;
-    .mosiac-item{
-        @media(min-width:720px){
-
-        }
+    overflow: hidden;
+    margin-bottom: 25px;
+    @media(max-width: 450px) {
+        display: flex;
+        flex-direction: column;
+    }
+    .mosiac-item {
         display: flex;
         justify-content: center;
-        // background-color: orange;
-        
         align-items: center;
         overflow: hidden;
-        border-radius:5px;
-        &.tall{
-            grid-row:span 2;
-            grid-column:span 2;
-            // .mosiac-item-info{
-            //     width:100%;
-            //     height:20%;
-                
-            // }
-            // .mosiac-item-img{
-            //     width:100%;
-            //     height:80%;
-            // }
+        border-radius: 5px;
+        @media(max-width: 450px) {
+            width: 100%;
+            margin: 5px;
+            border-radius: 5px 5p 5px 5px;
         }
-        &.large{
+        &.tall {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+        &.large {
             background-color: lightseagreen;
-            grid-row:span 1;
-            grid-column:span 4;
+            grid-row: span 1;
+            grid-column: span 4;
         }
-        &.small{
+        &.small {
             background-color: lightgreen;
-            grid-row:span 1;
-            grid-column:span 3;
-        } 
-
-        .mosiac-item-info{
-            width:60%;
+            grid-row: span 1;
+            grid-column: span 3;
+        }
+        .mosiac-item-info {
+            width: 60%;
             height: 100%;
-            
-            p{
-                color:white;
+
+            p {
+                color: white;
                 font-weight: 600;
-                margin-top:40px;
-                margin-left:18px;
-             }
+                margin-top: 40px;
+                margin-left: 18px;
+            }
+        }
+        .mosiac-item-img {
+            width: 40%;
+            height: 100%;
+
+            img {
+                max-height: 100%;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
         }
 
-        .mosiac-item-img{
-            width:40%;
-            height:100%;
-            img{
-                max-height:100%;
-                height:100%;
-                width:100%;
+    }
+    .tall {
+        grid-row: span 1;
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        background-color: lightsalmon;
+        .mosiac-item-info {
+            width: 100%;
+            height: 20%;
+        }
+        .mosiac-item-img {
+            width: 100%;
+            height: 80%;
+
+            img {
+                max-height: 100%;
+                height: 100%;
+                width: 100%;
                 object-fit: cover;
             }
         }
     }
-    .tall{
-        grid-row:span 1;
-        grid-column:span 4;
-        display: flex;
-        flex-direction: column;
-        background-color: lightsalmon;
-        .mosiac-item-info{
-            width:100%;
-            height: 20%;
-        }
-        .mosiac-item-img{
-            width:100%;
-            height: 80%;
-            img{
-                max-height:100%;
-                height:100%;
-                width:100%;
-                object-fit:cover ;
-            }
-        }
+}
+
+// delivery strip
+
+.delivery-strip-item {
+    border: 1.5px solid rgb(245, 245, 245);
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding-left: 5px;
+
+    img {
+        float: left;
+        padding: 2px;
+    }
+
+    .strip-item-info {
+        font-size: 16px;
+        padding-top: 2px;
+    }
+
+    .strip-info-rating {
+        font-size: 12px;
+    }
+}
+
+
+// sales
+.sales {
+    img {
+        border-radius: 4px;
     }
 }
