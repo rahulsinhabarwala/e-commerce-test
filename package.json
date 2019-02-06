@@ -1,12 +1,12 @@
 {
-  "name": "gulp-boilerplate",
+  "name": "ecommersetest",
   "version": "1.1.0",
-  "description": "Gulp boilerplate with browserify and sass",
+  "description": "ecommerse test project",
   "main": "main.js",
   "scripts": {
     "start": "gulp"
   },
-  "author": "Jesper Orb",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.1.6",
