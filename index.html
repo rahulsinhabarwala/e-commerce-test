@@ -8,7 +8,11 @@
   <link rel="stylesheet" type="text/css" href="dist/css/carousel.min.css">
   <link rel="stylesheet" type="text/css" href="dist/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="dist/css/fotter.min.css">
-  <link rel="stylesheet" type="text/css" href="dist/css/header.min.css">
+  <link rel="stylesheet" type="text/css" href="dist/css/header1.min.css">
+  <link rel="stylesheet" type="text/css" href="dist/css/header2.min.css">
+  <link rel="stylesheet" type="text/css" href="dist/css/productlist.min.css">
+
+  <link rel="stylesheet" type="text/css" href="dist/css/bannersales.min.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- font-awsome -->
@@ -23,57 +27,126 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">WebSiteName</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Page 1-1</a></li>
-                <li><a href="#">Page 1-2</a></li>
-                <li><a href="#">Page 1-3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Page 2</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          </ul>
-        </div>
-      </nav>
-      
-  <header id='header'>
+<!-- <header top -->
+<div class="header-top">
+ 
+  
+  <div class="container">
+     <div class="row">
+  <div class="header_logo col-left col col-lg-3 col-md-12 col-xs-12">
+    <a href="#">
+    <img class="logo img-responsive" src="dist/img/logo_footer.png" alt="Smartbook">
+    </a>
+  </div>
+  <div class="col-right col col-xs-12 col-lg-9 col-md-12 display_top">
+         <div class="blockcart cart-preview">
+          <div class="header">
+            <a><i class="fa fa-opencart"></i> 
+              My Shopping Cart 
+               <span class="item_count">0</span>
+              <span class="item_total">$0.00</span>
+            </a>
+  </div>
+</div>
+<script type="text/javascript">
+var wishlistProductsIds='';
+var baseDir ='http://demo.posthemes.com/pos_smartbook/layout3/';
+var static_token='228a61384ab036cacffbf16674d92769';
+var isLogged ='0';
+var loggin_required='You must be logged in to manage your wishlist.';
+var added_to_wishlist ='The product was successfully added to your wishlist.';
+var mywishlist_url='http://demo.posthemes.com/pos_smartbook/layout3/en/module/blockwishlist/mywishlist';
+var isLoggedWishlist=false;
+</script>
+<!-- Block search module TOP -->
+<div class="block-search  col-lg-8 col-md-8 col-sm-12">
+<div id="search_widget" class=" search_top">
+  <form>
+    <input type="hidden" name="controller" value="search">
+    <input class="text_input ui-autocomplete-input" type="text" name="s" value="" placeholder="Search our catalog" aria-label="Search" autocomplete="off">
+    <button type="submit">
+      Search
+    </button>
+  </form>
+</div>
+</div>
+<!-- /Block search module TOP -->
+
+  </div>
+    </div>
+  </div>
+</div>
+ <!-- header bottom -->
+<div class="header-bottom">
     <div class="container">
-      <div class="row top-holder">
-        <!--Logo-->
-        <div class="col-xs-12 col-sm-5 col-md-3 logo-holder">
-          <img src="dist/img/logo_footer.png" alt='books-logo'>
+        <div class="row">
+        <div class="col-lg-3 col-md-12 col-xs-12">
+          <div class="navleft-container hidden-md-down ">
+      <div class="pt_vmegamenu_title">
+        <h2><i class="ion-navicon"></i>All categories</h2>
+      </div>	
+  </div>
         </div>
-        <!--Search-input-->
-        <div class="col-xs-12 col-sm-7 col-md-7 search-group">
-          <form class="navbar-form">
-            <div class="form-group">
-              <input placeholder="Search our catalog" type="text" class="form-control search-bar">
-              <button class="btn btn-primary search-button"><span>Search</span></button>
-            </div>
-          </form>
-        </div>
-        <!--cart info-->
-        <div class="hidden-xs col-md-2 cart-info">
-          <div class="header-cart">
-            <div class="cart-para">
-              <p class="info-para">My shoping cart<span class="zero-sign">0</span></p>
-              <p class="price-para">$0.00<i class="fa fa-angle-down fa-down-icon"></i></p>
-            </div>
-          </div>
+        <div class="display_bottom col-xs-12 col-lg-9 col-md-12">
+               <div class="block-contact-top">
+    <div class="contact_cms">
+    <span class="cms1">  Free Support 24/7</span>
+    <span class="cms2">+01-202-555-0181</span>
+    </div>
+  </div>
+  
+  <!-- /Block categories module -->
+  <div class="nav-container hidden-md-down">
+    <div class="nav-inner">
+      <div id="pt_custommenu" class="pt_custommenu">
+          <div id="pt_menu_home" class="pt_menu act">
+            <div class="parentMenu"><a class="fontcustom2" href="#"><span>Home</span></a></div></div>
+          <div class="pt_menu pt_menu_cms"><div class="parentMenu">
+            <a class="fontcustom2" href="#"><span>Delivery</span></a></div></div>
+  <div class="pt_menu pt_menu_cms"><div class="parentMenu"><a class="fontcustom2" href="#"><span>Legal Notice</span></a></div></div>
+  <div class="pt_menu pt_menu_cms"><div class="parentMenu"><a class="fontcustom2" href="#"><span>Secure payment</span></a></div></div>
+  <div class="pt_menu pt_menu_cms"><div class="parentMenu"><a class="fontcustom2" href="#"><span>About us</span></a></div></div>
+  
+      </div>
+    </div>
+  </div>
         </div>
       </div>
-  </header>
+    </div>
+  </div>
+ <!-- header bottom -->
 
+<div class="container">
+  <div class="row">
+      <div class="pos_title">
+          <h2>
+            <span> Health &amp; Fitness</span>	
+          </h2>
+        </div>
+        <article class="product-miniature js-product-miniature" data-id-product="2" data-id-product-attribute="9" itemscope="" itemtype="http://schema.org/Product">
+          <div class="manufacturer"><a href="#">Studio Design</a></div>
+          <h1><a href="#">SonicFuel Wireless Over-Ear Headphones</a></h1>
+          <div class="item-inner">
+             <div class="img_block">
+                <a href="#" class="thumbnail product-thumbnail">
+                <img class="first-image" src="dist/img/book1.jpg">
+                </a>
+             </div>
+             <div class="product_desc">
+                <div class="product-price-and-shipping">
+                   <span class="sr-only">Price</span>
+                   <span itemprop="price" class="price">$35.90</span>
+                </div>
+             </div>
+          </div>
+       </article>
+  </div>
+</div>
+
+
+
+
+ 
   <!-- crousel -->
   <div class="container-fluid">
     <div class="row">
@@ -177,16 +250,18 @@
     <!-- dilvery strip   -->
 
     <!-- sales images -->
-    <div class="container">
-      <div class="row sales">
-        <div class="col-sm-6">
-          <img src="dist/img/sale1.jpg" alt="sale">
+    <div class="home-banner">
+        <div class="container">
+        <div class="row">
+        <div class="col-xs-12 col-md-6 col">
+        <div class="banner-box"><a href="#"> <img src="dist/img/sale1.jpg" alt="" class="img-responsive"></a></div>
         </div>
-        <div class="col-sm-6">
-          <img src="dist/img/sale2.jpg" alt="sale">
+        <div class="col-xs-12 col-md-6 col">
+        <div class="banner-box"><a href="#"> <img src="dist/img/sale2.jpg" alt="" class="img-responsive"></a></div>
         </div>
-      </div>
-    </div>
+        </div>
+        </div>
+        </div>
     <!-- sales images -->
 
     <!-- stripe crousel -->
@@ -222,12 +297,12 @@
             </div>
             <div class="item">
               <div class="pad15">
-                <img src="dist/img/brand-strip-logo5.jpg">
+                <img class="img-responsive" src="dist/img/brand-strip-logo5.jpg">
               </div>
             </div>
             <div class="item">
               <div class="pad15">
-                <img src="dist/img/brand-strip-logo5.jpg">
+                <img class="img-responsive"  src="dist/img/brand-strip-logo5.jpg">
               </div>
             </div>
           </div>
@@ -320,6 +395,7 @@
       </div>
     </footer>
     <!-- fotter -->
+    <div class="back-top" style="display: block;"><a href="#" class="back-top-button"></a></div>
     <script src="dist/js/bundle.js"></script>
 </body>
 
