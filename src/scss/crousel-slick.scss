@@ -89,8 +89,9 @@
 
 .slick-dots {
     margin-top: 50px !important;
+
     li {
-        button{
+        button {
             &:before {
                 border: none;
                 border-radius: 50%;
@@ -98,24 +99,25 @@
                 font-size: 50px;
                 color: #08eb40 !important;
             }
-    
+
         }
-        
+
         .slick-active {
             button {
                 &:before {
-                font-size: 50px;
-                color: #08eb40 !important;
+                    font-size: 50px;
+                    color: #08eb40 !important;
+                }
             }
         }
     }
-}
-.slick-dots li.slick-active button:before {
-    opacity: .65 !important;
-    border: none;
-    border-radius: 50%;
-    background-color: #FFF;
-    font-size: 50px;
-    color: #08eb40 !important;
-}
+
+    .slick-dots li.slick-active button:before {
+        opacity: .65 !important;
+        border: none;
+        border-radius: 50%;
+        background-color: #FFF;
+        font-size: 50px;
+        color: #08eb40 !important;
+    }
 }
