@@ -42,7 +42,6 @@ gulp.task('sass', () => {
 gulp.task('babel', function() {
     browserify({
         entries: './src/js/main.js',
-        entries: './src/js/slick.js',
         debug: true
     })
     .transform(babelify, { presets: ['env'] })

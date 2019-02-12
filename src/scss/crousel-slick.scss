@@ -29,51 +29,93 @@
     margin-left: -85px;
     bottom: -1px
 }
-    .c-discription{
-        text-align: center;
-        vertical-align: center;
-        padding: 0 15px;
-        .product-price-and-shipping {
-            line-height: 1;
-            animation: none!important;
-            opacity: 1;
-            .price {
-                font-size: 18px;
-                font-weight: 600;
-                color: #62ab00;
-                display: inline-block;
-                margin-bottom: 5px
-            }
-            .discount-product {
-                display: inline-block;
-                background: #bd0018;
-                color: white;
-                border-radius: 3px;
-                padding: 0 5px;
-                text-align: center;
-                line-height: 24px;
-                height: 24px;
-                font-size: 18px;
-                font-weight: 700;
-                text-transform: uppercase;
-                margin-left: 5px;
-                margin-bottom: 50px;
-            }
-            .sr-only {
-                display: none
-            }
+
+.c-discription {
+    text-align: center;
+    vertical-align: center;
+    padding: 0 15px;
+
+    .product-price-and-shipping {
+        line-height: 1;
+        animation: none !important;
+        opacity: 1;
+
+        .price {
+            font-size: 18px;
+            font-weight: 600;
+            color: #62ab00;
+            display: inline-block;
+            margin-bottom: 5px
         }
-        h2{
-            font-size: 14px;
+
+        .discount-product {
+            display: inline-block;
+            background: #bd0018;
+            color: white;
+            border-radius: 3px;
+            padding: 0 5px;
+            text-align: center;
+            line-height: 24px;
+            height: 24px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-left: 5px;
+            margin-bottom: 50px;
         }
-        .img-block{
-            position: relative;
-            overflow: hidden;
-            margin-bottom: 30px;
-            
-            img {
-                width: 100%;
-                margin: 0;
+
+        .sr-only {
+            display: none
+        }
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .img-block {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+// slick
+
+.slick-dots {
+    margin-top: 50px !important;
+    li {
+        button{
+            &:before {
+                border: none;
+                border-radius: 50%;
+                background-color: #FFF;
+                font-size: 50px;
+                color: #08eb40 !important;
+            }
+    
+        }
+        
+        .slick-active {
+            button {
+                &:before {
+                font-size: 50px;
+                color: #08eb40 !important;
             }
         }
     }
+}
+.slick-dots li.slick-active button:before {
+    opacity: .65 !important;
+    border: none;
+    border-radius: 50%;
+    background-color: #FFF;
+    font-size: 50px;
+    color: #08eb40 !important;
+}
+}
