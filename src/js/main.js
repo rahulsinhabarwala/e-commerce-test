@@ -1,7 +1,3 @@
-// optional
-$('#blogCarousel').carousel({
-    interval: 5000
-});
 $(document).ready(function () {
     var itemsMainDiv = ('.MultiCarousel');
     var itemsDiv = ('.MultiCarousel-inner');
@@ -14,16 +10,10 @@ $(document).ready(function () {
         else
             click(1, this)
     });
-
     ResCarouselSize();
-
-
-
-
     $(window).resize(function () {
         ResCarouselSize();
     });
-
     //this function define the size of the items
     function ResCarouselSize() {
         var incno = 0;
@@ -40,7 +30,6 @@ $(document).ready(function () {
             btnParentSb = $(this).parent().attr(dataItems);
             itemsSplit = btnParentSb.split(',');
             $(this).parent().attr("id", "MultiCarousel" + id);
-
 
             if (bodyWidth >= 1200) {
                 incno = itemsSplit[3];
