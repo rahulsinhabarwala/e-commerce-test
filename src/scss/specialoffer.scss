@@ -1,0 +1,43 @@
+.specialoffer {
+    background: #f0eff5;
+    padding-top: 80px;
+    margin-bottom: 80px;
+    overflow: hidden;
+    border-radius: 3px;
+    text-align: center;
+    .wrap{
+        background: white;
+        padding: 0 30px;
+        .pos_title {
+            border: none;
+            background: #62ab00;
+            position: relative;
+            display: block;
+            text-align: center;
+            margin-top: 0;
+            padding: 0;
+            h2 {
+                padding: 0;
+                color: white;
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 50px;
+                text-transform: inherit;
+                
+            }
+        }
+    }
+
+    .manufacturer {
+        text-align: center;
+    }
+    .product_name {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 3;
+        color: black;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+}
+
