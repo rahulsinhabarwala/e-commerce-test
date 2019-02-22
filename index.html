@@ -14,11 +14,10 @@
   <link rel="stylesheet" type="text/css" href="dist/css/bannersales.min.css">
   <link rel="stylesheet" type="text/css" href="dist/css/navbar.min.css">
   <link rel="stylesheet" type="text/css" href="dist/css/testimonials.min.css">
-
   <link rel="stylesheet" type="text/css" href="dist/css/specialoffer.min.css" />
+  <!--slick -->
   <link rel="stylesheet" type="text/css" href="dist/css/slick-theme.css" />
   <link rel="stylesheet" type="text/css" href="dist/css/slick.css" />
-
   <!-- <slick -->
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -36,29 +35,57 @@
 </head>
 
 <body>
-  <!-- <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
+  <nav>
+    <div class="container-fluid top-strip-cont">
+      <div class="container">
+        <div class="row top-strip-row">
+          <div class="col-xs-12 top-strip-col-1">
+            <ul class="top-strip-ul top-strip-ul-1">
+              <li class="lang-dropdown-li">
+                <img src="dist/img/1.jpg" alt="image"> <span class="dropdown-toggle" data-toggle="dropdown">English</span>
+                <i class="fa fa-angle-down fa-down-icon"></i>
+                <ul class="dropdown-menu  top-strip-dropdown-menu-usd">
+                  <li><a tabindex="-1" href="#">ENGLISH</a></li>
+                  <li><a tabindex="-1" href="#">GERMAN</a></li>
+                </ul>
+              </li>
+              <li class="dollar-dropdown-li">
+                <span class="dropdown-toggle" data-toggle="dropdown">USD $ </span> <span><i class="fa fa-angle-down fa-down-icon"></i></span>
+                <ul class="dropdown-menu  top-strip-dropdown-menu-usd">
+                  <li><a tabindex="-1" href="#">EUR</a></li>
+                  <li><a tabindex="-1" href="#">DOLLAR</a></li>
+                </ul>
+              </li>
+              <li class="dropdown top-strip-setting">
+                <span class="dropdown-toggle" data-toggle="dropdown">Setting <i class="fa fa-angle-down fa-down-icon"></i></span>
+                <ul class="dropdown-menu dropdown-menu-center top-strip-dropdown-menu">
+                  <li><a tabindex="-1" href="#">My Account</a></li>
+                  <li><a tabindex="-1" href="#">My Whishlist</a></li>
+
+                  <li><a tabindex="-1" href="#">Checkout</a></li>
+                  <li><a tabindex="-1" href="#">Sign In</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="top-strip-ul top-strip-ul-2">
+              <li>
+                <i class="fa fa-user"></i><span>My Account</span>
+              </li>
+              <li>
+                <i class="fa fa-heart"></i><span>My Whishlist</span>
+              </li>
+              <li>
+                <i class="fa fa-shopping-cart"></i><span>Checkout</span>
+              </li>
+              <li>
+                <i class="fa fa-key"></i><span>Sign In</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Page 2</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right user_info_desktop">
-        <li> <a href="#" rel="nofollow" class="dropdown-item"><i class="fa fa-user"></i> My account</a></li>
-        <li><a class="dropdown-item" href="#" title="My wishlist"><i class="fa fa-heart"></i>My wishlist</a></li>
-        <li><a href="#" class="dropdown-item"><i class="fa fa-check-circle"></i>Checkout</a></li>
-      </ul>
-      </ul>
     </div>
-  </nav> -->
+  </nav>
   <!-- <header top -->
   <div class="header-top">
     <div class="container">
@@ -543,8 +570,8 @@
   <!-- sales images -->
   <!-- <specialoffer -->
 
-  <!-- <div class="specialoffer">
-    <div class="container">
+  <div class="specialoffer">
+    <div class="container ">
       <div class="row">
         <div class="col-sm-4 wrap">
           <div class="pos_title">
@@ -552,38 +579,160 @@
               Special offer
             </h2>
           </div>
-          <div class="manufacturer"><a href="#">Graphic Corner</a>
-            <h1>
-              <a href="" class="product_name">
-                16 GB Grade A Unlocked Refurbished iPhone -...</a>
-            </h1>
-            <div class="img_block">
-              <a href="">
-                <img class="first-image" src="dist/img/book2.jpg">
-              </a>
+          <div class="slickspec">
+            <div class="manufacturer "><a href="#">Graphic Corner</a>
+              <h1>
+                <a href="" class="product_name">
+                  16 GB Grade A Unlocked</a>
+              </h1>
+              <div class="item-inner">
+                <div class="img_block">
+                  <img class="first-image" src="dist/img/book2.jpg" alt="">
+                </div>
+                <div class="product_desc">
+                  <div class="product-price-and-shipping">
+                    <span class="sr-only">Regular price</span>
+                    <span class="regular-price">$29.00</span>
+                    <span class="sr-only">Price</span>
+                    <span itemprop="price" class="price">$24.65</span>
+                    <span class="discount-percentage discount-product" style="top: 10px;">-15%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="margin-countdown">
+                <span class="is-countdown">
+                  <span class=" countdown-show">
+                    <span class="countdown-section">
+                      <span class="countdown-amount">645
+                      </span>
+                      <span class="countdown-period">Days
+                      </span>
+                    </span>
+                    <span class="countdown-section">
+                      <span class="countdown-amount">8
+                      </span>
+                      <span class="countdown-period">Hours
+                      </span>
+                    </span>
+                    <span class="countdown-section">
+                      <span class="countdown-amount">59</span>
+                      <span class="countdown-period">Mins</span></span>
+                    <span class="countdown-section">
+                      <span class="countdown-amount">16</span>
+                      <span class="countdown-period">Secs</span></span></span></span>
+              </div>
             </div>
-            <div class="mega-book-footer">
-                <div>
-                  <p class="price">
-                     <span class="to-cut">3.14</span> $2 <span class="to-discount">-20%</span>
-                  </p>
+            <div class="manufacturer "><a href="#">Graphic Corner</a>
+              <h1>
+                <a href="" class="product_name">
+                  16 GB Grade A Unlocked</a>
+              </h1>
+              <div class="item-inner">
+                <div class="img_block">
+                  <img class="first-image" src="dist/img/book2.jpg" alt="">
                 </div>
-                <div class="complete-date">
-                  <p><span class="num">663</span><br><span class="desc">year</span></p>
-                  <p><span class="num">667</span><br><span class="desc">mnt</span></p>
-                  <p><span class="num">667</span><br><span class="desc">day</span></p>
-                  <p><span class="num">667</span><br><span class="desc">days</span></p>
+                <div class="product_desc">
+                  <div class="product-price-and-shipping">
+                    <span class="sr-only">Regular price</span>
+                    <span class="regular-price">$29.00</span>
+                    <span class="sr-only">Price</span>
+                    <span itemprop="price" class="price">$24.65</span>
+                    <span class="discount-percentage discount-product" style="top: 10px;">-15%</span>
+                  </div>
                 </div>
+              </div>
+              <div class="margin-countdown">
+                <span class="is-countdown">
+                  <span class=" countdown-show">
+                    <span class="countdown-section">
+                      <span class="countdown-amount">645
+                      </span>
+                      <span class="countdown-period">Days
+                      </span>
+                    </span>
+                    <span class="countdown-section">
+                      <span class="countdown-amount">8
+                      </span>
+                      <span class="countdown-period">Hours
+                      </span>
+                    </span>
+                    <span class="countdown-section">
+                      <span class="countdown-amount">59</span>
+                      <span class="countdown-period">Mins</span></span>
+                    <span class="countdown-section">
+                      <span class="countdown-amount">16</span>
+                      <span class="countdown-period">Secs</span></span></span></span>
+              </div>
+            </div>
+            <div class="manufacturer "><a href="#">Graphic Corner</a>
+              <h1>
+                <a href="" class="product_name">
+                  16 GB Grade A Unlocked</a>
+              </h1>
+              <div class="item-inner">
+                <div class="img_block">
+                  <img class="first-image" src="dist/img/book2.jpg" alt="">
+                </div>
+                <div class="product_desc">
+                  <div class="product-price-and-shipping">
+                    <span class="sr-only">Regular price</span>
+                    <span class="regular-price">$29.00</span>
+                    <span class="sr-only">Price</span>
+                    <span itemprop="price" class="price">$24.65</span>
+                    <span class="discount-percentage discount-product" style="top: 10px;">-15%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="margin-countdown">
+                <span class="is-countdown">
+                  <span class=" countdown-show">
+                    <span class="countdown-section">
+                      <span class="countdown-amount">645
+                      </span>
+                      <span class="countdown-period">Days
+                      </span>
+                    </span>
+                    <span class="countdown-section">
+                      <span class="countdown-amount">8
+                      </span>
+                      <span class="countdown-period">Hours
+                      </span>
+                    </span>
+                    <span class="countdown-section">
+                      <span class="countdown-amount">59</span>
+                      <span class="countdown-period">Mins</span></span>
+                    <span class="countdown-section">
+                      <span class="countdown-amount">16</span>
+                      <span class="countdown-period">Secs</span></span></span></span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="col-sm-8">sdfgsdfg
+        </div>
+        <!-- <div class="banner-left">
+            <div class="banner-box"><img src="dist/img/4_1.jpg" alt="" class="img-responsive"></div>
+          </div> -->
+
+        <div class="col-xs-12 col-sm-12 col-md-8">
+          <div class="product-tabs-container-slider parents-product">
+            <div class="tab_inner">
+              <ul class="tabs_slider">
+                <li class="new_product first_item item active" rel="tab_new_product">
+                  <span>New Arrival</span>
+                </li>
+                <li class="besseller_product  item" rel="tab_besseller_product">
+                  <span>Bestseller</span>
+                </li>
+                <li class="feature_product last_item item" rel="tab_feature_product">
+                  <span>Featured Products</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div> -->
-
   <!-- client testinomals -->
   <div class="container ">
     <div class="row ">
@@ -617,7 +766,7 @@
               <div class="item-testimonials">
                 <div class="item">
                   <div class="content_author">
-                    <img src="dist/img/sample2.png" alt="Image Testimonial">
+                    <img src="dist/img/sample1.png" alt="Image Testimonial">
                   </div>
                   <div class="content_cli">
                     <div class="cli_testimonial">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse

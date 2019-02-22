@@ -1,50 +1,100 @@
+nav {
 
-.user_info_desktop {
-	float: right;
-	line-height: 1
-}
+	margin-bottom: 50px;
 
-.user_info_desktop li {
-	display: inline-block;
-	line-height: 1
-}
+	.top-strip-cont {
+		padding: 0;
+		background: black;
+		position: relative;
+		z-index: 10;
+	}
 
-.user_info_desktop li:last-child a {
-	padding-right: 0
-}
+	.lang-dropdown-li,
+	.dollar-dropdown-li {
+		position: relative;
 
-.user_info_desktop li a {
-	color: #999;
-	font-size: 14px;
-	line-height: 16px;
-	text-transform: capitalize;
-	padding: 0 20px;
-	position: relative
-}
+		ul {
+			position: absolute;
+		}
+	}
 
-.user_info_desktop li a:hover {
-	color: white
-}
+	.top-strip-row {
+		background: black;
+		color: white;
+		opacity: 0.9;
 
-.user_info_desktop li a:hover i {
-	left: -5px;
-	-webkit-transition: all 300ms linear;
-	-moz-transition: all 300ms linear;
-	-ms-transition: all 300ms linear;
-	-o-transition: all 300ms linear;
-	transition: all 300ms linear
-}
+		.top-strip-ul {
+			display: inline;
 
-.user_info_desktop li a i {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
-	font-size: 14px;
-	color: white;
-	-webkit-transition: all 300ms linear;
-	-moz-transition: all 300ms linear;
-	-ms-transition: all 300ms linear;
-	-o-transition: all 300ms linear;
-	transition: all 300ms linear
+			li {
+				display: inline;
+				line-height: 0;
+			}
+		}
+
+		.top-strip-col-1 {
+			display: flex;
+			justify-content: space-between;
+
+			span {
+				padding: 11px;
+			}
+
+			ul {
+				margin: 11px 0;
+
+				li {
+					padding-left: 8px;
+					color: white;
+					padding-right: 10px;
+					opacity: 0.8;
+					font-size: 14px;
+
+					@media(max-width: 600px) {
+						opacity: 0.9;
+						padding-left: 10px;
+					}
+
+					&:hover {
+						opacity: 1;
+					}
+				}
+
+				.fa {
+					font-size: 14px;
+					opacity: 1;
+				}
+			}
+
+			.top-strip-setting {
+				display: none;
+			}
+
+			.top-strip-dropdown-menu {
+				z-index: 9;
+			}
+
+			@media (max-width: 991px) {
+				.top-strip-setting {
+					display: inline;
+					float: none;
+					padding: 0 15px;
+				}
+			}
+
+			@media(max-width:768px) {
+				.top-strip-setting {
+					display: inline;
+				}
+
+				.top-strip-ul-2 {
+					display: none;
+				}
+
+				.top-strip-ul-1 {
+					margin: 10px auto;
+				}
+			}
+		}
+	}
 }
