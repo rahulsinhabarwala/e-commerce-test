@@ -3121,8 +3121,8 @@ $('.special_offer_slick').slick({
     infinite: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-    speed: 400,
+    autoplaySpeed: 3000,
+    speed: 600,
     slidesToShow: 2,
     slidesToScroll: 2,
     responsive: [{

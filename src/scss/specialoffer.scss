@@ -361,6 +361,7 @@
 .flex-container {
     display: flex;
     flex-flow: row wrap;
+    flex-direction: column;
 
     .img_block {
         width: 110px;
