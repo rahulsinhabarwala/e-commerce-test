@@ -1,24 +1,25 @@
-.header-bottom{
-    position: relative;
-    background: white;
-		top: 0;
-		left: 0;
-		width: 100%;
-		z-index: 1001;
-		padding: 10px 0;
-		background: rgba(255, 255, 255, .8);
-		border: none;
-    @media (max-width:991px) {
-        
-            padding-top: 0;
-            text-align: center
-        
-    }
+.header-bottom {
+	position: relative;
+	background: white;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1001;
+	padding: 10px 0;
+	background: rgba(255, 255, 255, .8);
+	border: none;
+
+	@media (max-width: 991px) {
+
+		padding-top: 0;
+		text-align: center
+	}
 }
 
 .header-bottom .display_bottom {
 	padding-top: 6px
 }
+
 .navleft-container {
 	position: relative;
 	z-index: 9
@@ -26,16 +27,16 @@
 
 .navleft-container .pt_vmegamenu_title {
 	position: relative;
-    cursor: pointer;
-    padding: 10px 10px 10px 50px;
-    height: 52px;
-    line-height: 1;
-    border: 2px solid #eee;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
+	cursor: pointer;
+	padding: 10px 10px 10px 50px;
+	height: 52px;
+	line-height: 1;
+	border: 2px solid #eee;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
 }
 
 @media (max-width:1199px) {
@@ -74,7 +75,7 @@
 	overflow: hidden;
 	line-height: 28px;
 	display: inline-block;
-	
+
 }
 
 .navleft-container .pt_vmegamenu_title h2 i {
@@ -82,27 +83,27 @@
 }
 
 .block-contact-top {
-    position: relative;
-    float: left;
-    @media (max-width:991px) {
-        
-            float: none;
-            display: inline-block;
-            margin-top: 10px
- 
-    }
+	position: relative;
+	float: left;
+
+	@media (max-width: 991px) {
+
+		float: none;
+		display: inline-block;
+		margin-top: 10px
+	}
 }
+
 .block-contact-top:before {
 	content: '\f58f';
-	font-size: 34px;
+	font-size: 30px;
 	font-weight: 900;
 	display: inline-block;
 	font-family: 'Font Awesome 5 Free';
 	vertical-align: middle;
-	margin-top: 7px;
 	margin-right: 15px;
 	color: #62ab00;
-	float: left
+	float: left;
 }
 
 .block-contact-top .contact_cms {
@@ -116,23 +117,24 @@
 	line-height: 20px;
 	font-weight: 400;
 	color: #777;
-	display: block
+	display: block;
 }
 
 .block-contact-top .contact_cms span.cms2 {
 	color: #282828;
-	font-weight: 700
+	font-weight: 700;
 }
 
 
 .pt_custommenu {
 	position: relative;
-	float: right
+	float: right;
 }
 
 .pt_custommenu .pt_menu {
+	
 	float: left;
-	position: relative
+	position: relative;
 }
 
 .pt_custommenu .pt_menu .parentMenu a {
@@ -147,7 +149,8 @@
 	text-transform: uppercase;
 	position: relative;
 	position: relative;
-	z-index: 9
+	z-index: 9;
+	
 }
 
 .pt_custommenu .pt_menu .parentMenu a i {
@@ -156,6 +159,10 @@
 	color: #282828;
 	vertical-align: -1px;
 }
+.parentMenu a i span{
+	color: #62ab00;
+} 
+
 .pt_custommenu .pt_menu.act .parentMenu a,
 .pt_custommenu .pt_menu.active .parentMenu a {
 	color: #62ab00;

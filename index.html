@@ -24,7 +24,9 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <!-- font-awsome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -75,7 +77,7 @@
                 <i class="fa fa-heart"></i><span>My Whishlist</span>
               </li>
               <li>
-                <i class="fa fa-shopping-cart"></i><span>Checkout</span>
+                <i class="fab fa-opencart"></i><span>Checkout</span>
               </li>
               <li>
                 <i class="fa fa-key"></i><span>Sign In</span>
@@ -129,7 +131,7 @@
         <div class="col-lg-3 col-md-12 col-xs-12">
           <div class="navleft-container hidden-md-down ">
             <div class="pt_vmegamenu_title">
-              <h2><i class="fa fa-bars"></i>All categories</h2>
+              <h2><i class="fab fa-bars"></i>All categories</h2>
             </div>
           </div>
         </div>
@@ -140,13 +142,12 @@
               <span class="cms2">+01-202-555-0181</span>
             </div>
           </div>
-
           <!-- /Block categories module -->
           <div class="nav-container">
             <div class="nav-inner">
               <div class="pt_custommenu">
                 <div class="pt_menu act">
-                  <div class="parentMenu"><a class="fontcustom2" href="#"><span>Home</span></a></div>
+                  <div class="parentMenu act"><a class="fontcustom2 " href="#"><span>Home</span></a></div>
                 </div>
                 <div class="pt_menu pt_menu_cms">
                   <div class="parentMenu">
@@ -161,7 +162,6 @@
                 <div class="pt_menu pt_menu_cms">
                   <div class="parentMenu"><a class="fontcustom2" href="#"><span>About us</span></a></div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -572,13 +572,15 @@
 
   <div class="specialoffer">
     <div class="container ">
-      <div class="row">
-        <div class="col-sm-4 wrap">
+      <div class="row ">
+        <div class="col-sm-4 ">
+        <div class="wrap">
           <div class="pos_title">
             <h2>
               Special offer
             </h2>
           </div>
+
           <div class="slickspec">
             <div class="manufacturer "><a href="#">Graphic Corner</a>
               <h1>
@@ -708,6 +710,8 @@
             </div>
           </div>
 
+       
+        </div>
         </div>
         <!-- <div class="banner-left">
             <div class="banner-box"><img src="dist/img/4_1.jpg" alt="" class="img-responsive"></div>
@@ -717,86 +721,636 @@
           <div class="product-tabs-container-slider parents-product">
             <div class="tab_inner">
               <ul class="tabs_slider">
-                <li class="new_product first_item item active" rel="tab_new_product">
+                <li class="new_product first_item item active" id="ist">
                   <span>New Arrival</span>
                 </li>
-                <li class="besseller_product  item" rel="tab_besseller_product">
+                <li class="besseller_product  item" id="2nd">
                   <span>Bestseller</span>
                 </li>
-                <li class="feature_product last_item item" rel="tab_feature_product">
+                <li class="feature_product last_item item" id="3rd">
                   <span>Featured Products</span>
                 </li>
               </ul>
             </div>
+            <!-- flex -->
+            <div class="flex_container_parent">
+              <div class="wrapper-crousel special_offer_slick ">
+                <div class="flex-container ">
+                  <article class="product-miniature js-product-miniature f-box">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
 
 
-            <div class="flex-container ">
-              <div class="wrapper-crousel ">
-                <article class="product-miniature js-product-miniature f-box">
-                  <div class="item-inner">
-                    <div class="img_block">
-                      <a href="#" class="">
-                        <img class="first-image" src="dist/img/book3.jpg">
-                      </a>
-                    </div>
-                    <div class="product_desc">
-                      <div class="manufacturer"><a href="">Studio
-                          Design</a></div>
-                      <p>vista fhd 4k camcorder 2214c002 </p>
-                      <div class="product-price-and-shipping">
-                        <span class="sr-only">Regular price</span>
-                        <span class="regular-price">$23.90</span>
-                        <span class="sr-only">Price</span>
-                        <span itemprop="price" class="price">$19.12</span>
-                        <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                <div class="flex-container ">
+                  <article class="product-miniature js-product-miniature f-box">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </article>
-                <article class="product-miniature js-product-miniature">
-                  <div class="item-inner">
-                    <div class="img_block">
-                      <a href="#" class="">
-                        <img class="first-image" src="dist/img/book3.jpg">
-                      </a>
-                    </div>
-                    <div class="product_desc">
-                      <div class="manufacturer"><a href="">Studio
-                          Design</a></div>
-                      <p>vista fhd 4k camcorder 2214c002 </p>
-                      <div class="product-price-and-shipping">
-                        <span class="sr-only">Regular price</span>
-                        <span class="regular-price">$23.90</span>
-                        <span class="sr-only">Price</span>
-                        <span itemprop="price" class="price">$19.12</span>
-                        <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </article>
-                <article class="product-miniature js-product-miniature">
-                  <div class="item-inner">
-                    <div class="img_block">
-                      <a href="#" class="">
-                        <img class="first-image" src="dist/img/book3.jpg">
-                      </a>
-                    </div>
-                    <div class="product_desc">
-                      <div class="manufacturer"><a href="">Studio
-                          Design</a></div>
-                      <p>vista fhd 4k camcorder 2214c002 </p>
-                      <div class="product-price-and-shipping">
-                        <span class="sr-only">Regular price</span>
-                        <span class="regular-price">$23.90</span>
-                        <span class="sr-only">Price</span>
-                        <span itemprop="price" class="price">$19.12</span>
-                        <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </article>
+                  </article>
+                </div>
+
+
+                <div class="flex-container ">
+                  <article class="product-miniature js-product-miniature f-box">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+
+
+
+              </div>
+              <div class="wrapper-crousel special_offer_slick ">
+                <div class="flex-container ">
+                  <article class="product-miniature js-product-miniature f-box">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+
+                <div class="flex-container ">
+                  <article class="product-miniature js-product-miniature f-box">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+
+                <div class="flex-container ">
+                  <article class="product-miniature js-product-miniature f-box">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+
+
+
+              </div>
+              <div class="wrapper-crousel special_offer_slick ">
+                <div class="flex-container ">
+                  <article class="product-miniature js-product-miniature f-box">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+
+                <div class="flex-container ">
+                  <article class="product-miniature js-product-miniature f-box">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+
+                <div class=".flex-container_parent ">
+                  <article class="product-miniature js-product-miniature f-box">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-miniature js-product-miniature">
+                    <div class="item-inner">
+                      <div class="img_block">
+                        <a href="#" class="">
+                          <img class="first-image" src="dist/img/book3.jpg">
+                        </a>
+                      </div>
+                      <div class="product_desc">
+                        <div class="manufacturer"><a href="">Studio
+                            Design</a></div>
+                        <p>vista fhd 4k camcorder 2214c002 </p>
+                        <div class="product-price-and-shipping">
+                          <span class="sr-only">Regular price</span>
+                          <span class="regular-price">$23.90</span>
+                          <span class="sr-only">Price</span>
+                          <span itemprop="price" class="price">$19.12</span>
+                          <span class="discount-percentage discount-product" style="top: 10px;">-20%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+
+
+
               </div>
             </div>
+            <!-- <flex-end -->
           </div>
         </div>
       </div>
@@ -995,11 +1549,11 @@
           <div class="social-media row">
             <h2 class="col-12">Stay Connected</h2>
             <div class="col-12">
-              <span class="fb-icon"><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
-              <span class="twitter-icon"><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
-              <span class="youtube-icon"><i class="fa fa-youtube-square" aria-hidden="true"></i></span>
-              <span class="gplus-icon"><i class="fa fa-google-plus-square" aria-hidden="true"></i></span>
-              <span class="insta-icon"><i class="fa fa-instagram" aria-hidden="true"></i>
+              <span class="fb-icon"><i class="fab fa-facebook" aria-hidden="true"></i></span>
+              <span class="twitter-icon"><i class="fab fa-twitter" aria-hidden="true"></i></span>
+              <span class="youtube-icon"><i class="fab fa-youtube" aria-hidden="true"></i></span>
+              <span class="gplus-icon"><i class="fab fa-google" aria-hidden="true"></i></span>
+              <span class="insta-icon"><i class="fab fa-instagram" aria-hidden="true"></i>
               </span>
             </div>
           </div>

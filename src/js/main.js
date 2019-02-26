@@ -97,3 +97,13 @@ $(document).ready(function () {
     }
 
 });
+
+//special offer tabs
+$(document).ready(function () {
+    $('.tab_inner li').click(function(e) {
+        $('.tab_inner li.active').removeClass('active');
+        $(this).addClass('active');
+        e.preventDefault();
+    });
+});
+

@@ -3015,8 +3015,8 @@ $('.sliderProd').slick({
     infinite: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-    speed: 400,
+    autoplaySpeed: 3000,
+    speed: 700,
     slidesToShow: 5,
     slidesToScroll: 5,
     responsive: [{
@@ -3050,8 +3050,8 @@ $('.sliderProd').slick({
     dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 1000,
-    speed: 300,
+    autoplaySpeed: 3000,
+    speed: 700,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
@@ -3106,16 +3106,16 @@ $('.sliderProd').slick({
     }, {
       breakpoint: 480,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1
       } // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
 
     }]
   });
-//   special offer slick
 
+//   special offer slick
 $('.special_offer_slick').slick({
     dots: true,
     infinite: false,
@@ -3142,12 +3142,11 @@ $('.special_offer_slick').slick({
     }, {
       breakpoint: 480,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1
       } // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
-
     }]
   });
 

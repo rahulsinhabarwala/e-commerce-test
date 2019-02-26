@@ -5,11 +5,12 @@
     overflow: hidden;
     border-radius: 3px;
     text-align: center;
-
     .wrap {
         background: white;
-        padding: 0 30px;
-
+        overflow: hidden;
+        .slick-dots{
+            margin-bottom: 30px;
+        }
         .pos_title {
             border: none;
             background: #62ab00;
@@ -18,7 +19,6 @@
             text-align: center;
             margin-top: 0;
             padding: 0;
-
             h2 {
                 padding: 0;
                 color: white;
@@ -26,15 +26,12 @@
                 font-weight: 400;
                 line-height: 50px;
                 text-transform: inherit;
-
             }
         }
     }
-
     .manufacturer {
         text-align: center;
     }
-
     .product_name {
         font-size: 18px;
         font-weight: 600;
@@ -64,7 +61,6 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
-
     img {
         width: 100%;
         margin: 0;
@@ -76,7 +72,6 @@
     color: #6f6f6f;
     background: white;
     overflow: hidden;
-
     .product_name {
         padding: 10px 0 5px;
         font-size: 13px;
@@ -86,11 +81,9 @@
 
 .product-price-and-shipping {
     line-height: 1;
-
     .sr-only {
         display: none;
     }
-
     .price {
         font-size: 18px;
         font-weight: 600;
@@ -98,7 +91,6 @@
         display: inline-block;
         margin-bottom: 5px;
     }
-
     .regular-price {
         font-size: 14px;
         color: #999;
@@ -106,7 +98,6 @@
         text-decoration: line-through;
         margin-right: 5px;
     }
-
     .discount-product {
         display: inline-block;
         background: #bd0018;
@@ -133,13 +124,11 @@
     max-width: 220px;
     margin: auto;
     margin-top: 25px;
-
     .countdown-section {
         float: left;
         text-align: center;
         padding: 10px 0;
     }
-
     .countdown-amount {
         display: block;
         font-size: 15px;
@@ -150,7 +139,6 @@
         line-height: 1;
         margin-bottom: 2px
     }
-
     .countdown-period {
         display: block;
         font-size: 14px;
@@ -158,7 +146,6 @@
         color: #777;
         text-transform: capitalize
     }
-
     .countdown-show .countdown-section {
         width: 25%
     }
@@ -170,7 +157,6 @@
 
 .banner-left {
     position: relative;
-
     @media (min-width: 768px) {
         margin-bottom: 50px;
     }
@@ -181,14 +167,12 @@
     overflow: hidden;
     width: 100%;
     margin-bottom: 30px;
-
     img {
         width: 100%;
     }
 }
 
 //right side slider of special offers
-
 .product-tabs-container-slider {
     border-radius: 3px;
     padding: 30px 0;
@@ -198,28 +182,24 @@
     display: inline-block;
     width: 100%;
     background: white;
-
     @media (max-width: 575px) {
         ul.tabs_slider li {
             display: block
         }
     }
-
     .tab_inner {
         position: relative;
         display: inline-block;
         width: 100%;
         text-align: center;
-        margin-bottom: 60px
+        margin-bottom: 30px;
     }
-
     ul.tabs_slider {
         display: inline-block;
         background: white;
         position: relative;
         font-size: 0;
         padding: .5px;
-
         &::before {
             content: "";
             position: absolute;
@@ -232,7 +212,6 @@
             z-index: 1;
             pointer-events: none
         }
-
         li {
             display: inline-block;
             position: relative;
@@ -247,7 +226,6 @@
             font-weight: 700
         }
     }
-
     ul.tabs_slider li:before,
     ul.tabs_slider li:after {
         content: "";
@@ -259,7 +237,6 @@
         margin-left: -3px
     }
 }
-
 
 .product-tabs-container-slider ul.tabs_slider li:before {
     border-top: 6px solid transparent;
@@ -358,59 +335,42 @@
     text-align: left
 }
 
-.flex-container {
+
+.flex_container_parent {
     display: flex;
-    flex-flow: row wrap;
-    flex-direction: column;
-
-    .img_block {
-        width: 110px;
+    flex-flow: row;
+    flex-direction: row;
+    overflow: hidden;
+    .wrapper-crousel {
         float: left;
-        margin: 0 20px 0 0;
-        position: relative;
-        overflow: hidden;
-        border: none;
+        width: 100%;
     }
-
-    article {
-        padding: 20px;
-        width: 50%;
-        .item-inner{
-            border-right: 1px solid rgba(0, 0, 0, .25) !important;
+  
+    .flex-container {
+        display: flex;
+        flex-flow: column wrap;
+        flex-direction: column;
+        
+      
+        .img_block {
+            width: 110px;
+            float: left;
+            margin: 0 20px 0 0;
+            position: relative;
+            overflow: hidden;
+            border: none;
         }
-    }
-
-    .js-product-miniature {
-        width: 50%;
-
-        .product-miniature {
-            width: 100%;
-            display: inline-block;
-            padding: 11px 0;
-            
-
-            a {
-                font-size: 12px;
-                text-transform: capitalize;
-                color: #999;
-                line-height: 1;
-                margin-bottom: 15px;
-                display: block;
-            }
-
-            h1 {
-                font-weight: 400;
-                margin: 0;
-                line-height: 1;
+        article {
+            padding: 20px;
+            .item-inner {
+                border-right: 1px solid rgba(0, 0, 0, .25) !important;
             }
         }
-
-        .product_desc {
-            text-align: left;
-
-            .manufacturer {
-                text-align: left;
-
+        .js-product-miniature {
+            .product-miniature {
+                width: 100%;
+                display: inline-block;
+                padding: 11px 0;
                 a {
                     font-size: 12px;
                     text-transform: capitalize;
@@ -418,6 +378,25 @@
                     line-height: 1;
                     margin-bottom: 15px;
                     display: block;
+                }
+                h1 {
+                    font-weight: 400;
+                    margin: 0;
+                    line-height: 1;
+                }
+            }
+            .product_desc {
+                text-align: left;
+                .manufacturer {
+                    text-align: left;
+                    a {
+                        font-size: 12px;
+                        text-transform: capitalize;
+                        color: #999;
+                        line-height: 1;
+                        margin-bottom: 15px;
+                        display: block;
+                    }
                 }
             }
         }
