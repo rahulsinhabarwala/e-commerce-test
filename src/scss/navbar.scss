@@ -1,100 +1,81 @@
 nav {
 
-	margin-bottom: 50px;
 
-	.top-strip-cont {
-		padding: 0;
-		background: black;
+
+	.top-strip-cont{
+		padding:0;
 		position: relative;
 		z-index: 10;
+		background: rgb(40,40,40);
 	}
-
-	.lang-dropdown-li,
-	.dollar-dropdown-li {
-		position: relative;
-
-		ul {
-			position: absolute;
-		}
-	}
-
-	.top-strip-row {
-		background: black;
-		color: white;
+	.top-strip-row{
+		background: rgb(40,40,40);;
+		color:white;
 		opacity: 0.9;
-
-		.top-strip-ul {
+		.top-strip-ul{
 			display: inline;
-
-			li {
+			padding:0;
+			li{
+	
 				display: inline;
-				line-height: 0;
 			}
 		}
-
-		.top-strip-col-1 {
+		.top-strip-col-1{
 			display: flex;
 			justify-content: space-between;
-
-			span {
-				padding: 11px;
+			span{
+				padding-left:4px;
 			}
-
-			ul {
-				margin: 11px 0;
-
-				li {
+			ul{
+				margin:11px 0;
+				
+				li{
+					transition: 0.4s;
 					padding-left: 8px;
-					color: white;
+					color:white;
 					padding-right: 10px;
-					opacity: 0.8;
+				   opacity: 0.8;
+				   transition: opacity 0.3s;
 					font-size: 14px;
-
-					@media(max-width: 600px) {
-						opacity: 0.9;
-						padding-left: 10px;
-					}
-
-					&:hover {
-						opacity: 1;
-					}
+				   &:hover{
+					   opacity: 1;
+				   }
 				}
-
-				.fa {
+				.fa{
 					font-size: 14px;
-					opacity: 1;
+			   
+				}
+				@media(max-width:600px){
+					padding-left:5px;
 				}
 			}
-
-			.top-strip-setting {
+		   
+			.top-strip-setting{
 				display: none;
 			}
-
-			.top-strip-dropdown-menu {
-				z-index: 9;
+			.top-strip-dropdown-menu{
+				z-index:999;
+				background: rgba(255,255,255,1)
 			}
-
-			@media (max-width: 991px) {
-				.top-strip-setting {
-					display: inline;
-					float: none;
-					padding: 0 15px;
-				}
-			}
-
-			@media(max-width:768px) {
-				.top-strip-setting {
+			@media(max-width:768px){
+			   
+				.top-strip-setting{
 					display: inline;
 				}
-
-				.top-strip-ul-2 {
+				.top-strip-ul-2{
 					display: none;
 				}
-
-				.top-strip-ul-1 {
-					margin: 10px auto;
+				.top-strip-ul-1{
+					padding:0;
+					margin:10px auto;
 				}
+			  
 			}
+	
+			
 		}
+		// font-size: 14px;
+		// font-weight: 100;
+	
 	}
 }

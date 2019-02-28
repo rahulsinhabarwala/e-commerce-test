@@ -54,7 +54,7 @@ hr {
 
 .MultiCarousel .MultiCarousel-inner {
   transition: 1s ease all;
-  float: left;
+  
 }
 
 .MultiCarousel .MultiCarousel-inner .item {
@@ -78,6 +78,7 @@ hr {
   border-radius: 2px;
   color: #fff;
   padding: 9px 13px;
+  margin-left: 5px;
 }
 
 .MultiCarousel .leftLst {

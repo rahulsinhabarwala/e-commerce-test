@@ -5,12 +5,15 @@
     overflow: hidden;
     border-radius: 3px;
     text-align: center;
+
     .wrap {
         background: white;
         overflow: hidden;
-        .slick-dots{
+
+        .slick-dots {
             margin-bottom: 30px;
         }
+
         .pos_title {
             border: none;
             background: #62ab00;
@@ -19,6 +22,7 @@
             text-align: center;
             margin-top: 0;
             padding: 0;
+
             h2 {
                 padding: 0;
                 color: white;
@@ -29,9 +33,11 @@
             }
         }
     }
+
     .manufacturer {
         text-align: center;
     }
+
     .product_name {
         font-size: 18px;
         font-weight: 600;
@@ -61,6 +67,7 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
+
     img {
         width: 100%;
         margin: 0;
@@ -72,6 +79,7 @@
     color: #6f6f6f;
     background: white;
     overflow: hidden;
+
     .product_name {
         padding: 10px 0 5px;
         font-size: 13px;
@@ -81,9 +89,11 @@
 
 .product-price-and-shipping {
     line-height: 1;
+
     .sr-only {
         display: none;
     }
+
     .price {
         font-size: 18px;
         font-weight: 600;
@@ -91,6 +101,7 @@
         display: inline-block;
         margin-bottom: 5px;
     }
+
     .regular-price {
         font-size: 14px;
         color: #999;
@@ -98,6 +109,7 @@
         text-decoration: line-through;
         margin-right: 5px;
     }
+
     .discount-product {
         display: inline-block;
         background: #bd0018;
@@ -124,11 +136,13 @@
     max-width: 220px;
     margin: auto;
     margin-top: 25px;
+
     .countdown-section {
         float: left;
         text-align: center;
         padding: 10px 0;
     }
+
     .countdown-amount {
         display: block;
         font-size: 15px;
@@ -139,6 +153,7 @@
         line-height: 1;
         margin-bottom: 2px
     }
+
     .countdown-period {
         display: block;
         font-size: 14px;
@@ -146,6 +161,7 @@
         color: #777;
         text-transform: capitalize
     }
+
     .countdown-show .countdown-section {
         width: 25%
     }
@@ -155,18 +171,15 @@
     margin-bottom: 50px;
 }
 
-.banner-left {
-    position: relative;
-    @media (min-width: 768px) {
-        margin-bottom: 50px;
-    }
-}
+
 
 .banner-box {
     position: relative;
     overflow: hidden;
+    padding: 15px 0;
     width: 100%;
     margin-bottom: 30px;
+
     img {
         width: 100%;
     }
@@ -182,60 +195,61 @@
     display: inline-block;
     width: 100%;
     background: white;
-    @media (max-width: 575px) {
-        ul.tabs_slider li {
-            display: block
-        }
-    }
-    .tab_inner {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    ul.tabs_slider {
-        display: inline-block;
-        background: white;
-        position: relative;
-        font-size: 0;
-        padding: .5px;
-        &::before {
-            content: "";
-            position: absolute;
-            border: 2px solid #eee;
-            border-radius: 3px;
-            left: 0;
-            bottom: 0;
-            top: 0;
-            right: 0;
-            z-index: 1;
-            pointer-events: none
-        }
-        li {
-            display: inline-block;
-            position: relative;
-            background: white;
-            border: 2px solid transparent;
-            line-height: 30px;
-            cursor: pointer;
-            color: #282828;
-            border-radius: 3px;
-            text-transform: capitalize;
-            font-size: 15px;
-            font-weight: 700
-        }
-    }
-    ul.tabs_slider li:before,
-    ul.tabs_slider li:after {
+    overflow: hidden;
+}
+
+.tab_inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+ul.tabs_slider {
+    display: inline-block;
+    background: white;
+    position: relative;
+    font-size: 0;
+    padding: .5px;
+
+    &::before {
         content: "";
         position: absolute;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        top: 100%;
-        left: 50%;
-        margin-left: -3px
+        border: 2px solid #eee;
+        border-radius: 3px;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        pointer-events: none
     }
+
+    li {
+        display: inline-block;
+        position: relative;
+        background: white;
+        border: 2px solid transparent;
+        line-height: 30px;
+        cursor: pointer;
+        color: #282828;
+        border-radius: 3px;
+        text-transform: capitalize;
+        font-size: 15px;
+        font-weight: 700
+    }
+}
+
+ul.tabs_slider li:before,
+ul.tabs_slider li:after {
+    content: "";
+    position: absolute;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    top: 100%;
+    left: 50%;
+    margin-left: -3px
 }
 
 .product-tabs-container-slider ul.tabs_slider li:before {
@@ -335,23 +349,36 @@
     text-align: left
 }
 
+@media (max-width: 575px) {
+
+    .product-tabs-container-slider ul.tabs_slider li {
+        display: block;
+    }
+}
+.wrap{
+    .banner-box {
+        height: 175px;
+        }
+}
+// special offers
 
 .flex_container_parent {
     display: flex;
-    flex-flow: row;
     flex-direction: row;
-    overflow: hidden;
+    flex-wrap: nowrap;
+    transition: ease 1s;
+
     .wrapper-crousel {
-        float: left;
         width: 100%;
+        //z-index: 999;
     }
-  
+
     .flex-container {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         flex-direction: column;
-        
-      
+        overflow: hidden;
+
         .img_block {
             width: 110px;
             float: left;
@@ -360,17 +387,24 @@
             overflow: hidden;
             border: none;
         }
+
         article {
             padding: 20px;
+
             .item-inner {
                 border-right: 1px solid rgba(0, 0, 0, .25) !important;
+                @media (max-width:480px){
+                    border-right: none !important;
+                }
             }
         }
+
         .js-product-miniature {
             .product-miniature {
                 width: 100%;
                 display: inline-block;
                 padding: 11px 0;
+
                 a {
                     font-size: 12px;
                     text-transform: capitalize;
@@ -379,16 +413,20 @@
                     margin-bottom: 15px;
                     display: block;
                 }
+
                 h1 {
                     font-weight: 400;
                     margin: 0;
                     line-height: 1;
                 }
             }
+
             .product_desc {
                 text-align: left;
+
                 .manufacturer {
                     text-align: left;
+
                     a {
                         font-size: 12px;
                         text-transform: capitalize;

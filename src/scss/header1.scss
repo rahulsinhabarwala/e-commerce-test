@@ -1,9 +1,10 @@
-
+.header-top{
+    padding-top: 30px;
 .header_logo {
     vertical-align: middle;
     text-align: center;
     @media (max-width:991px) {
-        .header-top .header_logo img {
+         .header_logo img {
             margin: auto;
             margin-bottom: 20px
         }
@@ -14,6 +15,7 @@
         
         }
     }
+}
     
 .blockcart {
     .header {

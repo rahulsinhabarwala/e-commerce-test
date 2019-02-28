@@ -3098,7 +3098,7 @@ $('.sliderProd').slick({
         dots: true
       }
     }, {
-      breakpoint: 800,
+      breakpoint: 990,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2
