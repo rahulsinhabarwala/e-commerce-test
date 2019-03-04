@@ -1,11 +1,14 @@
 .header-top{
+    .display_top{
+        text-align: center;
+    }
     padding-top: 30px;
 .header_logo {
-    vertical-align: middle;
+   
     text-align: center;
     @media (max-width:991px) {
-         .header_logo img {
-            margin: auto;
+          img {
+            margin: 0 auto;
             margin-bottom: 20px
         }
        .header-bottom .display_bottom {
@@ -125,7 +128,7 @@ background: white;
     color: #62ab00;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 15%;
 }
 
 .item_count {

@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     @font-face {
         font-family: 'Open Sans',sans-serif;
@@ -162,7 +165,6 @@ a:hover {
     .banner-box {
         position: relative;
         overflow: hidden;
-        margin-bottom: 50px
     }
     img {
         border-radius: 4px;
