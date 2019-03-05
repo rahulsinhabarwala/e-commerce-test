@@ -94,6 +94,9 @@ $(document).ready(function () {
         var slide = $(Parent).attr("data-slide");
         ResCarousel(ell, Parent, slide);
     }
+    //address validations
+    $( "#accordion" ).accordion();
+    
 
 });
 
@@ -123,4 +126,4 @@ $(document).ready(function () {
     });
 });
 
-//address validations
+

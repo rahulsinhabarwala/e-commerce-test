@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +12,121 @@
   <!-- font-awsome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- jquery -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="dist/favicon.png">
 </head>
+
 <body>
   <section id="wrapper"></section>
   <div class="container">
     <div class="row">
-      <div class="col-md-8"></div>
-      <div class="col-md-4"></div>
+      <div class="col-md-8">
+        <div id="accordion">
+          <h3>Section 1</h3>
+          <div>
+            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget.
+              Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+              condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros.
+              Nam mi. Proin viverra leo ut odio.</p>
+          </div>
+          <h3>Section 2</h3>
+          <div>
+            <p>Sed non urna. Phasellus eu ligula. Vestibulum sit amet purus.
+              Vivamus hendrerit, dolor aliquet laoreet, mauris turpis velit,
+              faucibus interdum tellus libero ac justo.</p>
+          </div>
+          <h3>Section 3</h3>
+          <div>
+            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus.
+              Quisque lobortis.Phasellus pellentesque purus in massa.</p>
+            <ul>
+              <li>List item one</li>
+              <li>List item two</li>
+              <li>List item three</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        
+          <div class="card-block">
+            <div class="cart-summary-products">
+              <p>2 items</p>
+              <p><a>show details</a></p>
+              <div class="collapse" id="cart-summary-product-list">
+                <ul class="media-list">
+                  <li class="media">
+                    <div class="media-left">
+                      <a href="http://demo.posthemes.com/pos_smartbook/layout3/en/electronics/13-library-of-souls-the-third-novel-of-miss-peregrine-s-peculiar-children.html"
+                        title="Library of Souls : The Third Novel of Miss Peregrine's Peculiar Children">
+                        <img class="media-object" src="http://demo.posthemes.com/pos_smartbook/layout3/74-side_default/library-of-souls-the-third-novel-of-miss-peregrine-s-peculiar-children.jpg"
+                          alt="Library of Souls : The Third Novel of Miss Peregrine's Peculiar Children">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <span class="product-name">Library of Souls : The Third Novel of Miss Peregrine's Peculiar
+                        Children</span>
+                      <span class="product-quantity">x1</span>
+                      <span class="product-price float-xs-right">$9.00</span>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="media-left">
+                      <a href="http://demo.posthemes.com/pos_smartbook/layout3/en/electronics/11-26-hollow-city-the-second-novel-of-miss-peregrine-s-children.html#/8-color-white"
+                        title="Hollow City : The Second Novel of Miss Peregrine's Children">
+                        <img class="media-object" src="http://demo.posthemes.com/pos_smartbook/layout3/65-side_default/hollow-city-the-second-novel-of-miss-peregrine-s-children.jpg"
+                          alt="Hollow City : The Second Novel of Miss Peregrine's Children">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <span class="product-name">Hollow City : The Second Novel of Miss Peregrine's Children</span>
+                      <span class="product-quantity">x1</span>
+                      <span class="product-price float-xs-right">$18.90</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cart-summary-line cart-summary-subtotals" id="cart-subtotal-products">
+              <span class="label">Subtotal</span>
+              <span class="value">$27.90</span>
+            </div>
+            <div class="cart-summary-line cart-summary-subtotals" id="cart-subtotal-shipping">
+              <span class="label">Shipping</span>
+              <span class="value">$7.00</span>
+            </div>
+          </div>
+          <hr class="separator">
+          <div class="card-block cart-summary-totals">
+            <div class="cart-summary-line cart-total">
+              <span class="label">Total (tax excl.)</span>
+              <span class="value">$34.90</span>
+            </div>
+            <div class="cart-summary-line">
+              <span class="label sub">Taxes</span>
+              <span class="value sub">$0.00</span>
+            </div>
+          </div>
+
+        <!-- </section> -->
+
+
+
+      </div>
     </div>
   </div>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="dist/js/bundle.js"></script>
 </body>
+
 </html>
