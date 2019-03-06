@@ -1,5 +1,120 @@
-form{
-    .checkout-inner {
-        border: 1px solid #e9e9e9;
+section{
+    h3{
+        margin: 0%;
+        font-size: 17px;
+    } 
+    h1{
+        margin: 0%;
+        font-size: 17px;
+    }
+}
+.checkout-inner {
+    border: 1px solid #e9e9e9;
+    border: 1px solid #e9e9e9;
+     .step-number {
+        display: inline-block;
+     padding: .625rem;
+        
+    }
+    .checkout-step {
+        box-shadow: none;
+        border-bottom: 1px solid #e9e9e9;
+        cursor: pointer;
+        margin-bottom: 0;
+        padding: 0.9375rem;
+        &:last-child {
+            border: 0;
+        }
+    }
+}
+.checkout-accordion {
+    box-shadow: none;
+    border-bottom: 1px solid #e9e9e9;
+
+    .ui-accordion .ui-accordion-header {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        margin: 2px 0 0 0;
+        box-shadow: none;
+        border-bottom: 1px solid #e9e9e9;
+
+    }
+}
+.checkout_details {
+    border: 1px solid #e9e9e9;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both
+    }
+
+    p {
+        font-size: 14px;
+        color: #777;
+        margin: 0;
+        font-weight: 600;
+
+        a {
+            color: #282828;
+            text-decoration: none;
+
+            &:hover {
+                color: #62ab00;
+            }
+        }
+    }
+
+    .card {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        text-align: justify;
+    }
+
+    .cart-summary-line {
+        clear: both;
+
+        &:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+
+        .labels {
+            padding-left: 0;
+            font-weight: 400;
+            white-space: inherit
+        }
+
+        .value {
+            color: #232323;
+
+            font-weight: 600;
+            float: right;
+        }
+    }
+
+    .card-block {
+        padding: 1.25rem;
+
+        h1 {
+            color: #282828;
+            text-align: left;
+            font-size: 20px;
+            font-style: normal;
+            text-transform: none;
+            border-bottom: 1px solid #e9e9e9;
+            margin-bottom: .8em;
+            padding-bottom: .5em
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-8 {
+        float: left;
+        width: 66.66667%;
     }
 }

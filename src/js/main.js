@@ -95,10 +95,10 @@ $(document).ready(function () {
         ResCarousel(ell, Parent, slide);
     }
     //address validations
-    $( "#accordion" ).accordion();
+    //On click any <h3> within the container
     
-
-});
+        $( "#accordion" ).accordion();
+     
 
 //special offer tabs
 $(document).ready(function () {
